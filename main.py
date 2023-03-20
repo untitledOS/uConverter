@@ -1,6 +1,9 @@
 import sys
 import random
-from PySide6 import QtCore, QtWidgets, QtGui, QLineEdit
+from PySide6 import QtCore, QtWidgets, QtGui
+from PySide6.QtCore import *
+from PySide6.QtGui import *
+from PySide6.QtWidgets import *
 
 class MyWidget(QtWidgets.QWidget):
     def __init__(self):
