@@ -1,2 +1,2 @@
-# ytdd
-Youtube Downloader Deluxe - yt-dlp QT GUI
+# Trapeze
+Trapeze Youtube Downloader - yt-dlp QT GUI
