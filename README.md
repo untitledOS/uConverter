@@ -1,2 +1,2 @@
 # Trapeze
-Trapeze Youtube Downloader - yt-dlp QT GUI
+Trapeze - Audio & Video Megatool
