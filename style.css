@@ -1,0 +1,82 @@
+QPushButton {
+    background-color: #0c63f0;
+    color: white;
+    padding: 10px 24px;
+    font-size: 16px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #0a52c1;
+}
+
+QPushButton:pressed {
+    background-color: #0842a1;
+}
+
+QPushButton#youtube_red {
+    background-color: #ff0000;
+}
+
+QPushButton#youtube_red:hover {
+    background-color: #cc0000;
+}
+
+QPushButton#youtube_red:pressed {
+    background-color: #990000;
+}
+
+QPushButton#minor {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+QPushButton#minor:hover {
+    background-color: #e0e0e0;
+}
+
+QPushButton#minor:pressed {
+    background-color: #c0c0c0;
+}
+
+QLineEdit {
+    border: 2px solid grey;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+QComboBox {
+    border: 2px solid grey;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+QLabel {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QCheckBox {
+    font-size: 16px;
+}
+
+QCheckBox::indicator {
+    width: 20px;
+    height: 20px;
+}
+
+QPushButton#settings_button {
+    background-color: transparent;
+    border: none; color: black;
+    font-weight: normal;
+    border-radius: 12px;
+}
+
+QPushButton#settings_button:hover {
+    background-color: #e0e0e0;
+}
+
+QPushButton#settings_button:pressed {
+    background-color: #c0c0c0;
+}
