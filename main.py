@@ -1,4 +1,4 @@
-import sys, yt_dlp, toml
+import sys, yt_dlp, toml, os
 from PySide6 import QtCore, QtWidgets, QtGui
 from PySide6.QtCore import *
 from PySide6.QtGui import *
@@ -61,7 +61,9 @@ class SettingsWindow(QtWidgets.QWidget):
         self.setFixedWidth(300)
         self.setFixedHeight(300)
         self.layout = QtWidgets.QVBoxLayout(self)
-        with open("style.css", "r") as f:
+        # with open("style.css", "r") as f:
+        # open from __file__ parent directory using os
+        with open(os.path.join(os.path.dirname(__file__), "style.css"), "r") as f:
             self.setStyleSheet(f.read())
 
         self.text = QtWidgets.QLabel("Settings", alignment=QtCore.Qt.AlignTop)
