@@ -110,7 +110,7 @@ class MainWindow(QtWidgets.QWidget):
         self.settings_window = SettingsWindow()
         self.setWindowTitle("Trapeze")
         self.layout = QtWidgets.QVBoxLayout(self)
-        with open("style.css", "r") as f:
+        with open(os.path.join(os.path.dirname(__file__), "style.css"), "r") as f:
             self.setStyleSheet(f.read())
 
         self.settings_button = QtWidgets.QPushButton("Settings")
