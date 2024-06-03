@@ -92,8 +92,13 @@ class SettingsWindow(QtWidgets.QWidget):
     def apply_settings(self):
         config = get_config()
         config["Settings"]["download_path"] = self.download_path.text()
-        with open("config.toml", "w") as f:
-            toml.dump(config, f)
+        try:
+            user = os.getlogin()
+            with open(f"/home/{user}/.config/uconverter/config.toml", "w") as f:
+                toml.dump(config, f)
+        except:
+            with open(os.path.join(os.path.dirname(__file__), "core_config.toml"), "w") as f:
+                toml.dump(config, f)
         self.close()
 
     def browse(self):
